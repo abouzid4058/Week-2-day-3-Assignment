@@ -1,5 +1,3 @@
-/* Shared stylesheet — commit 2: header, nav, and footer styling */
-
 /* ========== GLOBAL STYLES ========== */
 body {
   margin: 0;
@@ -86,6 +84,107 @@ body#contact header {
   color: #fff;
   padding: 8px 15px;
   border-radius: 4px;
+}
+
+/* ========== MAIN CONTENT ========== */
+main {
+  padding: 2em;
+  line-height: 1.6;
+}
+main h2, main h3 {
+  color: #9ed034;
+}
+
+/* Partner Section */
+section#partners-section {
+  width: 100%;
+  background-color: #4288C3;
+  padding: 2em 0;
+}
+#partners {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+#partners .partner {
+  display: inline-block;
+  margin: 0 0.75em;
+  padding: 1.3em 1.5em;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+#partners .partner:hover {
+  transform: scale(1.1);
+}
+#partners .partner img {
+  width: 90px;
+  height: 90px;
+}
+
+/* ========== TABLE STYLES ========== */
+table {
+  margin-top: 35px;
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+}
+table caption {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px;
+  color: #753a30;
+}
+table, th, td {
+  border: 1px solid #000;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background: #f0f0f0;
+}
+
+/* ========== FORM STYLES ========== */
+form {
+  margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+form label {
+  display: block;
+  margin: 15px 0 5px 0;
+  font-weight: bold;
+}
+form input, form select, form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+form button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #9ed034;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+form button:hover {
+  background: #7aa626;
 }
 
 /* ========== FOOTER STYLES ========== */

@@ -1,0 +1,138 @@
+/* Shared stylesheet — commit 2: header, nav, and footer styling */
+
+/* ========== GLOBAL STYLES ========== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========== HEADER STYLES ========== */
+header {
+  width: 100%;
+  padding-top: 3em;
+  min-height: 400px;
+  color: #fff;
+}
+
+body#index header {
+  background: url(images/partners/cliff_ocean.jpg) no-repeat center;
+  background-size: cover;
+}
+body#activities header {
+  background: url(images/cliff_rock.jpg) no-repeat center;
+  background-size: cover;
+}
+body#contact header {
+  background: url(images/runfly.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.main-header {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 80%;
+  max-width: 900px;
+  margin: 2em auto 0 auto;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.main-header .logo img {
+  width: 90px;
+  height: auto;
+}
+
+/* Navigation Menu */
+.main-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.main-menu ul li {
+  padding: 0 20px;
+  line-height: 100px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.main-menu ul li + li {
+  border-left: 1px solid rgba(202, 204, 202, 0.6);
+}
+.main-menu ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+}
+.main-menu ul li a:hover {
+  color: #9ed034;
+}
+.main-menu ul li.active a {
+  background: #9ed034;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+
+/* ========== FOOTER STYLES ========== */
+footer {
+  width: 100%;
+  padding: 2em 0 1em;
+  background-color: #ecfab8;
+}
+footer #nondisclaimer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+footer #nondisclaimer .copy {
+  font-size: 0.9em;
+}
+footer #nondisclaimer .social .fa {
+  padding: 10px;
+  font-size: 18px;
+  width: 18px;
+  text-align: center;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+  opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+footer #nondisclaimer .social .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+footer #nondisclaimer .social .fa-instagram {
+  background: #125688;
+  color: white;
+}
+footer #disclaimer {
+  text-align: center;
+  padding-top: 1em;
+}
+footer #disclaimer p {
+  font-size: 0.85em;
+  margin: 0;
+}
